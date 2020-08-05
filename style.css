@@ -1,0 +1,146 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+::selection{
+    background-color: lightgray;
+    color: white;
+}
+h2{
+    color:black !important
+}
+input {
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 gray;
+    border: none;
+}
+button{
+    box-shadow: 0 2px 4px 0 gray;
+    border-radius: 9px;
+    border: none;
+    padding: 8px;
+    width: 20%;
+    transition: all .6s;
+   
+}
+h5{
+    cursor: pointer;
+}
+button:hover{
+    cursor:pointer;
+    background: radial-gradient(lightgray,white);
+    color: white;
+}
+button,input:focus {
+    outline: 0;
+}
+a,h2,input{
+    color:gray;
+    letter-spacing: 2px;
+}
+a:hover{
+    color: darkgrey;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden ;
+    
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 2px 4px 0 gray;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    margin-right: 17px;
+}
+.section1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    font-size: 20px;
+    border: none;
+    border-left: 1px solid gray;
+    border-radius: 400px;
+    
+}
+.right-side{
+    width: 30%;
+}
+.left-side{
+    width: 30%;
+}
+.section1 button {
+    padding: 12px;
+    width: 80px;
+}
+.section2 .row{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 300px;
+}
+.col{
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+    border-radius: 22px;
+    box-shadow: 0 2px 4px 0 gray;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-top: 1px gray solid;
+    box-shadow: 0 2px 4px 0 gray;
+}
+input {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width:800px) {
+    nav{
+        padding-left: 0;
+    }
+    .section2 .row{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    .section1{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: left;
+    }
+    
+    .left-side{
+        width: 400px;
+        height: 300px;
+        margin: 100px 100px 0px 0px;
+        font-size: 20px;
+    }
+    .right-side{
+       display: none;
+    }
+}
+@media only screen and (max-width:600px) {
+    footer{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
